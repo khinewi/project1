@@ -1,0 +1,104 @@
+body {
+    background-image: url(../images/hexagon-transparent-30.png);
+}
+
+h1 {
+    font-family: 'Bungee Inline', cursive;  
+    text-align: center;
+    font-size: 70px;
+    color: #d50000;
+}
+
+/* submit button formatting */
+.btn {
+    background-color: #d50000;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: #f5f5f5;
+    color: #d50000;
+}
+
+/* dropdown formatting */
+.dropdown-content li>a, .dropdown-content li>span {
+    color: #d50000;
+}
+
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid #d50000;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: .5px solid #d50000;
+    box-shadow: 0 1px 0 0 #d50000;
+    color: #d50000;
+}
+
+label.active {
+    color: #d50000 !important;
+}
+
+.input.select-dropdown, .dropdown-trigger {
+    color: #9e9e9e;
+}
+
+textarea.materialize-textarea {
+    color: #9e9e9e;
+}
+
+input.datepicker {
+    cursor: pointer;
+}
+
+.no-click {
+    pointer-events: none;
+}
+
+footer {
+    position: fixed;
+    padding: 10px 10px 10px 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: #d50000;
+    margin-top: 50px;
+}
+
+.btn:focus {
+    background-color: #d50000;
+    color: white;
+}
+
+/* prevent input field line from turning green after validating input */
+input.valid:not([type]), input.valid:not([type]):focus, input.valid[type=text]:not(.browser-default), input.valid[type=text]:not(.browser-default):focus, input.valid[type=password]:not(.browser-default), input.valid[type=password]:not(.browser-default):focus, input.valid[type=email]:not(.browser-default), input.valid[type=email]:not(.browser-default):focus, input.valid[type=url]:not(.browser-default), input.valid[type=url]:not(.browser-default):focus, input.valid[type=time]:not(.browser-default), input.valid[type=time]:not(.browser-default):focus, input.valid[type=date]:not(.browser-default), input.valid[type=date]:not(.browser-default):focus, input.valid[type=datetime]:not(.browser-default), input.valid[type=datetime]:not(.browser-default):focus, input.valid[type=datetime-local]:not(.browser-default), input.valid[type=datetime-local]:not(.browser-default):focus, input.valid[type=tel]:not(.browser-default), input.valid[type=tel]:not(.browser-default):focus, input.valid[type=number]:not(.browser-default), input.valid[type=number]:not(.browser-default):focus, input.valid[type=search]:not(.browser-default), input.valid[type=search]:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dropdown {
+    border-bottom: 1px solid #d50000;
+    -webkit-box-shadow: 0 1px 0 0 #d50000;
+    box-shadow: 0 1px 0 0 #d50000;
+}
+
+/* link color for results card */
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    color: #d50000;
+}
+
+.card-content.red-text {
+    padding: 10px;
+    text-align: center;
+}
+
+.card-title {
+    font-weight: bold !important;
+    color: #d50000;
+}
+
+#searches {
+    padding: 5px;
+}
+
+#inputErrorMessage {
+    color: #d50000;
+    font-weight: bold;
+}

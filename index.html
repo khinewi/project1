@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Bebas+Neue|Bungee+Inline|Dosis:800|Modak|Nunito:700&display=swap"
+        rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-database.js"></script>
+
+
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Night Out</title>
+</head>
+
+<body>
+    <h1>A Night On The Town</h1>
+
+    <!-- home page -->
+    <div class="container">
+        <!-- first input field - "What?" -->
+        <div class="row" id="what">
+            <div class="input-field col s8 offset-s2">
+                <select name="dropdown">
+                    <option value="" disabled selected>What would you like to do?</option>
+                    <option>See a Concert</option>
+                    <option>Go to a Game</option>
+                    <option>Eat Out</option>
+                    <option>Have a Drink</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row" id="dining">
+            <div class="input-field col s8 offset-s2">
+                <input id="foodType" type="text" class="validate">
+                <label for="foodType">What are you in the mood for?</label>
+            </div>
+        </div>
+
+        <!-- second input field - "Where?" -->
+        <div class="row" id="where">
+            <div class="input-field col s8 offset-s2">
+                <input id="location" type="text" class="validate">
+                <label for="location" id="locationLabel">Where would you like to do it?</label>
+            </div>
+        </div>
+
+        <!-- get results -->
+        <div class="row">
+            <div class="col s8 offset-s2" id="results-button">
+                <p id="inputErrorMessage"></p>
+                <button class="btn waves-effect waves-light btn-small" type="submit" name="action">Results
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </div>
+
+        <!-- results section -->
+        <div class="container" id="result">
+
+        </div>
+
+        <!-- recent searches div -->
+        <div class="container"></div>
+        <div class="row">
+            <div class="col s8 offset-s2">
+                <div class="card darken-1">
+                    <div class="card-content red-text">
+                        <span class="card-title">Recent Searches</span>
+                    </div>
+                    <div class="card-action" id="searches">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Activity</th>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Cuisine (If Applicable)</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <footer>CDEK, inc</footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
